@@ -1,14 +1,14 @@
 ﻿# **Python学习笔记**
 ---
-[TOC]
+ [TOC]
 
 ---
-#软件要做的事
+# 软件要做的事
 1. 接受人的输入
 2. 改变输入的内容
 3. 打印出改变了的东西
 
-#简单操作
+# 简单操作
 - 要使用中文批注，不报ASCII错误，要在首行加入 `# -*- coding: utf-8 -*-`
 - 查看文档
 ```
@@ -60,7 +60,7 @@ With the three double-quotes.
 
 - `x += y` 等同于` x = x + y`，同理 `x -= y`
 
-#格式化字符串format string
+# 格式化字符串format string
 - 为真实值预留位置，并控制显示的格式
 
 - 格式符包含类型码
@@ -78,8 +78,8 @@ hilarious = False
 joke_evaluation = "Isn't that joke so funny?! %r"
 print joke_evaluation % hilarious
 ```
-#接受输入
-##交互式接收输入
+# 接受输入
+## 交互式接收输入
 ```
 x = raw_input( )
 x = raw_input( "Input your name: ") # 可以提示输入的内容
@@ -89,7 +89,7 @@ prompt = "> "
 likes = raw_input(prompt) # 把用户提示符变成一个变量，要是以后要修改成别的字符，只要改一个位置就可以
 ```
 
-##从脚本接收输入
+## 从脚本接收输入
 `import`导入模块module（或者称为库library）；
 `argv`即参数变量argument variable，保存你运行Python脚本时传递给Python脚本的参数。
 `python ex13.py first 2nd`
@@ -103,7 +103,7 @@ print "Your first variable is:", first
 print "Your second  variable is:", second
 ```
 
-#文件操作
+# 文件操作
 使用方法 `F.操作`，如`F.close()`, `F.read()`
 **`open() -> 中间过程 -> F.close()`**
 
@@ -162,7 +162,7 @@ out_file.write(inputdata)
 **close()**
 关闭文件
 
-#函数的定义与使用
+# 函数的定义与使用
 1.定义函数
 函数可以做很多事情，打印内容，做计算，定义可以用规则去做的事情，下次直接用
 ```
@@ -216,7 +216,7 @@ ADDING 12 + 13
 Equal: 25
 ```
 
-#遇到的报错
+# 遇到的报错
 - SyntaxError: invalid syntax
 ```
 #错误写法
